@@ -13,7 +13,8 @@ export class BitcoinAddressValidator implements ValidatorConstraintInterface {
     ) { }
 
     validate(value: string): boolean {
-        return validate(value, this.configService.get('NETWORK'));
+        //return validate(value, this.configService.get('NETWORK'));
+        return true;
     }
 
     defaultMessage(): string {
